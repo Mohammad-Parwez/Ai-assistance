@@ -1,0 +1,16 @@
+[
+    {
+        "id": "1",
+        "name": "John Doe",
+        "email": "john@example.com",
+        "service_interested": "Web Development",
+        "status": "Contacted"
+    },
+    {
+        "id": "2",
+        "name": "Jane Smith",
+        "email": "jane@business.io",
+        "service_interested": "GenAI Integration",
+        "status": "New"
+    }
+]

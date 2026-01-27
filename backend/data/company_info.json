@@ -1,0 +1,28 @@
+{
+    "company_name": "Fly Your Tech",
+    "address": "123 Tech Avenue, Silicon Valley, CA 94025",
+    "phone": "+1 (555) 123-4567",
+    "email": "contact@flyyourtech.com",
+    "services": [
+        {
+            "name": "Web Development",
+            "description": "Custom websites and web applications using modern stacks (MERN, Next.js).",
+            "starting_price": "$1000"
+        },
+        {
+            "name": "Mobile App Development",
+            "description": "iOS and Android apps with high performance using React Native or Flutter.",
+            "starting_price": "$2500"
+        },
+        {
+            "name": "GenAI Integration",
+            "description": "Integrating LLMs, LangChain, and AI agents into your business workflow.",
+            "starting_price": "$3000"
+        },
+        {
+            "name": "Cloud Solutions",
+            "description": "AWS, Azure, and GCP infrastructure setup and management.",
+            "starting_price": "$1500"
+        }
+    ]
+}
