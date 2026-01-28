@@ -3,7 +3,7 @@ import axios from 'axios';
 import { Send, Bot, User, Loader2, Sparkles, Phone, Mail, Building, PieChart, Calendar } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+const API_BASE = 'https://ai-assistance-2-fvky.onrender.com/api';
 // for production
 // const API_BASE = 'https://fly-tech-backend.onrender.com/api';
 
