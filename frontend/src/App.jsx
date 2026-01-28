@@ -3,7 +3,9 @@ import axios from 'axios';
 import { Send, Bot, User, Loader2, Sparkles, Phone, Mail, Building, PieChart, Calendar } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const API_BASE = 'http://localhost:5000/api';
+const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+// for production
+// const API_BASE = 'https://fly-tech-backend.onrender.com/api';
 
 const App = () => {
   const [messages, setMessages] = useState([
@@ -99,8 +101,8 @@ const App = () => {
                     {msg.role === 'user' ? <User size={18} /> : <Bot size={18} />}
                   </div>
                   <div className={`p-4 rounded-2xl ${msg.role === 'user'
-                      ? 'bg-indigo-600 text-white rounded-tr-none shadow-lg shadow-indigo-900/20'
-                      : 'bg-white/5 border border-white/10 rounded-tl-none'
+                    ? 'bg-indigo-600 text-white rounded-tr-none shadow-lg shadow-indigo-900/20'
+                    : 'bg-white/5 border border-white/10 rounded-tl-none'
                     }`}>
                     <p className="text-sm leading-relaxed whitespace-pre-wrap">{msg.content}</p>
                   </div>

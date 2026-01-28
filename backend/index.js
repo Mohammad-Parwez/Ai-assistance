@@ -46,6 +46,7 @@ app.get('/api/leads', (req, res) => {
     const data = JSON.parse(fs.readFileSync(dataPath, 'utf-8'));
     res.json(data);
 });
+// localhost:5000/api/leads
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
